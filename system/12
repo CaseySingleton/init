@@ -1,0 +1,16 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    12                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: csinglet <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/08/25 19:10:06 by csinglet          #+#    #+#              #
+#    Updated: 2018/08/25 19:10:07 by csinglet         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+Q.	Figure out the exact size of each folder of /var
+
+A.	Using the command and flags du -sh /var/* will give the size of everything
+	iside of the directory var

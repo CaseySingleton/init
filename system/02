@@ -1,0 +1,17 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    02                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: csinglet <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/08/25 15:34:35 by csinglet          #+#    #+#              #
+#    Updated: 2018/08/25 15:34:38 by csinglet         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+Q.	What comand can you use to rename your system?
+
+A.	hostname name
+
+#	The above will change the default hostname to "name"

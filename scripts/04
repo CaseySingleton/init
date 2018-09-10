@@ -1,0 +1,37 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    04                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: csinglet <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/08/30 19:45:26 by csinglet          #+#    #+#              #
+#    Updated: 2018/08/30 19:45:26 by csinglet         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+Q.	Write a script which monitors the modifications made to the /etc/crontab
+	file and sends an email to root if the file is modified. Create a scheduled
+	task to run this script evertday at midnight.
+
+A.	MDOLD = md5sum /etc/crontab_log
+	MDNEW='md5sum /etc/crontab | cut -d " " -f 1'
+
+	if [ "$MDOLD" != "$MDNEW" ]
+	then
+		md5sum /etc/crontab | cut -d " " -f 1 > /etc/crontab_log
+		mail -s "Someone messed with Crontab" root@localhost.com < /etc/crontab
+	fi
+
+#	The command inotify would be cool to use, but it detects changes when they
+	happen. Not at a specified time :(
+
+#	This is the best I could come up with, but it involves creating a file
+	called crontab_log.
+#	Basically md5sum returns a bunch of stuff based on contents. If those
+	contents were to change md5sum will return a different number.
+#	crontab_log is to contain the last known md5sum for /etc/crontab and be
+	used as a refrence to check against.
+
+#	Also add to crontab -e
+	0 0 * * * /file/path/to/.sh/file

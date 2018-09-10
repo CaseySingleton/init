@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    15                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: csinglet <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/06/16 20:27:53 by csinglet          #+#    #+#              #
+#    Updated: 2018/06/16 20:27:54 by csinglet         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+Q.	What file contains the local DNS entries?
+
+A.	/etc/hosts
+
+#	https://en.wikipedia.org/wiki/Hosts_(file)
+#	I learned that if you go to file:///etc/ you get a list of cool stuff

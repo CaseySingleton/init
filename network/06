@@ -1,0 +1,23 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    06                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: csinglet <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/06/15 15:17:22 by csinglet          #+#    #+#              #
+#    Updated: 2018/06/15 15:17:23 by csinglet         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+echo "🌮"
+
+#	Get the complete path of the file that contains the IP address of the DNS
+#	server you’re using
+
+#	/var/run/resolv.conf
+
+#	The IP address of the DNS server can be found in /etc/resolv.conf. But
+#	/etc/resolv.conf is a symbolic link to /var/run/resolv.conf

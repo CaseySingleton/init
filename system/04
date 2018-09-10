@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    04                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: csinglet <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/08/25 17:24:42 by csinglet          #+#    #+#              #
+#    Updated: 2018/08/25 17:24:43 by csinglet         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+Q.	What command gives you the time snce your system was last booted?
+
+A.	"who" as well as "last reboot" can both be used ti find the lastest boot
+
+#	for who, use the flag -be
+#	for last reboot last reboot -F | head -1 can be used for more detailed info

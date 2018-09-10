@@ -1,0 +1,20 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    16                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: csinglet <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/08/25 19:40:10 by csinglet          #+#    #+#              #
+#    Updated: 2018/08/25 19:40:11 by csinglet         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+Q.	Find the service which makes it possible to run specific tasks folling a
+	regular schedule
+	
+A.	crontab -e, choose editor, using format below you can enter in when and
+	what command to execute
+	minute(0-59) hour(0-23) day(1-31) month(1-12) weekday(0-6) command
+
+#	src: https://tinyurl.com/yazf9pty

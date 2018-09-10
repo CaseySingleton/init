@@ -1,0 +1,16 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    14                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: csinglet <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/08/25 19:20:45 by csinglet          #+#    #+#              #
+#    Updated: 2018/08/25 19:20:46 by csinglet         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+Q.	Run the 'tail -f /var/log/syslog' command in background.
+
+A.	'tail -f /var/log/syslog'& will run the command in the backgound and can be
+	checked using ps aux

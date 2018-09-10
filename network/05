@@ -1,0 +1,24 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    05                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: csinglet <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/06/15 14:45:08 by csinglet          #+#    #+#              #
+#    Updated: 2018/06/15 14:45:09 by csinglet         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+#	Identify the IP address of the DNS that responds to the following
+#	url: slash16.org
+
+dig slash16.org | grep "SERVER" | cut -d '(' -f 2 | cut -d ')' -f 1
+
+#	get ip addresses associated with slash16.org
+#	get all lines with "SERVER"
+#	get info starting at '(' and ending at ')'
+
+#	dig gets DNS info associated with a url

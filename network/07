@@ -1,0 +1,20 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    07                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: csinglet <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/06/15 15:58:38 by csinglet          #+#    #+#              #
+#    Updated: 2018/06/15 15:58:39 by csinglet         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+#	Query an external DNS server on the slash16.org domain name
+	(ie. : google 8.8.8.8)
+
+nslookup slash16.org 8.8.8.8
+
+#	nslookup - used to query internet domain name servers

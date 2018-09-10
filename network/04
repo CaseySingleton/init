@@ -1,0 +1,24 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    04                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: csinglet <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/06/15 14:22:21 by csinglet          #+#    #+#              #
+#    Updated: 2018/06/15 14:22:25 by csinglet         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+#	Identifiy the default gateway in the routing table
+
+netstat -nr | grep "default" | head -1 | awk '{print($2)}'
+
+#	display routing table info | grab line containing "default" | only use the
+#	first line returned from grep | print the second word
+
+#	netstat - display network status
+#	-n shows netword addresses as numbers.
+#	-r shows the routing tables.

@@ -1,0 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    08                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: csinglet <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/08/25 18:23:37 by csinglet          #+#    #+#              #
+#    Updated: 2018/08/25 18:23:38 by csinglet         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+Q.	What file contains the RSA keys that are authorized to connect via SSH?
+
+A.	Inside of the file .ssh. The keys are in the file authorized_keys.

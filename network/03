@@ -1,0 +1,23 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    03                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: csinglet <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/06/14 20:04:42 by csinglet          #+#    #+#              #
+#    Updated: 2018/06/14 20:04:43 by csinglet         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+#	Identify the MAC address of the Wi-Fi card
+
+ifconfig en1 | grep "ether" | awk '{print($2)}'
+
+#	ifconfig the wifi card | grab line containing "ether" | print second word
+#	networksetup -listallhardwareports can be used to verify that en1 is the
+#	the wifi card.
+
+#	ifconfig - configure network interface parameters

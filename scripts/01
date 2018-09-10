@@ -1,0 +1,19 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    01                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: csinglet <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/08/29 21:17:53 by csinglet          #+#    #+#              #
+#    Updated: 2018/08/29 21:17:53 by csinglet         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+Q.	Write a script which displays only the login, UID and Path of each entry
+    of the /etc/passwd file.
+
+A.	cat /etc/passwd | awk -F ':' '{printf "%-20s | %-6d | %s\n", $1, $3, %6}'
+
+#	-F sets the field seperator to whatever comes after the flag. The
+	enviornment variables are delimited by the field seperator

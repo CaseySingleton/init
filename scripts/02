@@ -1,0 +1,27 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    02                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: csinglet <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/08/29 21:48:02 by csinglet          #+#    #+#              #
+#    Updated: 2018/08/29 21:48:06 by csinglet         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+Q.	Write a script which updates all the package sources, then all the packages,
+	and then logs everything in a file named /var/log/update_script.log. Create
+	a scheduled task for this script, once per week at 4 AM.
+
+A.	echo "apt-get update && apt-get upgrade >> /var/log/update_script.log" >>
+	~/apt_update.sh
+	echo '0 4 * * 0 root sh ~/apt_update.sh' | crontab
+
+#	Echo the shell commands needed to update and upgrade all packages into
+	a file
+
+#	Tell crontab when the shell script for updating all packages should be run
+
+#	Might need to change permissoins of file using chmod 755 or whatever
+	it is

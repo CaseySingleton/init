@@ -1,0 +1,21 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    18                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: csinglet <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/08/29 20:56:09 by csinglet          #+#    #+#              #
+#    Updated: 2018/08/29 20:56:09 by csinglet         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+Q.	With the previous command, authorize only IP addresses from 10.0.0.0/8 to
+    connect to your system.
+
+A.	sudo iptables -P INPUT DROP
+    sudo iptables -A INPUT -p tcp -s 10.0.0.0/8 -j ACCEPT
+
+#	Drop all inputs
+#	Append the rule for tcp inputs 10.0.0.0/8
+#	If inputs match 10.0.0.0/8 then accept
