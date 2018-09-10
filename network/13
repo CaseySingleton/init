@@ -10,8 +10,12 @@
 #                                                                              #
 # **************************************************************************** #
 
-Q.	Figure out the server type.
+#!/bin/bash
 
-A.	Server type is DHCP
+echo "🌮"
 
-#	host 10.51.1.253
+#	Figure out the server type.
+
+host 10.51.1.253
+
+#	Server type is DHCP

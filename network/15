@@ -10,9 +10,13 @@
 #                                                                              #
 # **************************************************************************** #
 
-Q.	What file contains the local DNS entries?
+#!/bin/bash
 
-A.	/etc/hosts
+echo "🌮"
+
+echo "Q. What file contains the local DNS entries?"
+
+echo "A. /etc/hosts"
 
 #	https://en.wikipedia.org/wiki/Hosts_(file)
 #	I learned that if you go to file:///etc/ you get a list of cool stuff

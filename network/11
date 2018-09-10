@@ -14,11 +14,11 @@
 
 echo "🌮"
 
-#	Use the output of the previous command to find the name and IP address of
-#	the device that makes the link between you (local network) and the outside
-#	world
+echo "Q. Use the output of the previous command to find the name and IP
+address of the device that makes the link between you (local network) and
+the outside world"
 
-#	The device used to createa the link is "nat (10.90.1.11)"
+echo "\nThe device used to create the link is nat 10.90.1.11"
+nslookup 10.90.1.11
 
 #	NAT stands for Netword Address Tranlation
-#	nslookup 10.90.1.11 = nat.42.us.org

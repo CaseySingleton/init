@@ -14,13 +14,12 @@
 
 echo "🌮"
 
-#	Do the same with 42.fr, what do you notice?
+echo "Q. Do the same with 42.fr, what do you notice?"
 
-#	42.fr has 3 IP addresses associated with it
-#	163.172.250.11
-#	163.172.250.12
-#	163.172.250.13
+echo "\n42.fr has 3 IP addresses associated with it
+163.172.250.11
+163.172.250.12
+163.172.250.13"
 
-#	nslookup 42.fr
-#	nslookup 42.fr 8.8.8.8
-#	google = 8.8.8.8
+nslookup 42.fr
+nslookup 42.fr 8.8.8.8

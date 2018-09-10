@@ -14,8 +14,8 @@
 
 echo "🌮"
 
-#	Are the returned IP addresses similar?
+echo "Q. Are the returned IP addresses similar?"
 
-#	The Server and Address line are different because we chose to use a
-#	different DNS server. However the Non-authoritative answers are exactly
-#	the same aside from the order that they are displayed
+echo "A. The Server and Address line are different because we chose to use a
+different DNS server. However the Non-authoritative answers are exactly
+the same aside from the order that they are displayed"
